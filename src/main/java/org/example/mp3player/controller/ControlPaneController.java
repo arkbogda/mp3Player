@@ -1,25 +1,12 @@
-package org.example.mp3player.main.controller;
+package org.example.mp3player.controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Slider;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.input.MouseEvent;
 
-public class MainController {
-
-    @FXML
-    private MenuItem fileMenuItem;
-
-    @FXML
-    private MenuItem dirMenuItem;
-
-    @FXML
-    private MenuItem closeMenuItem;
-
-    @FXML
-    private MenuItem aboutMenuItem;
-
-    @FXML
-    private TableView<?> contentTable;
+public class ControlPaneController {
 
     @FXML
     private Button previousButton;
@@ -37,6 +24,7 @@ public class MainController {
     private Slider progressSlider;
 
     public void initialize() {
+        System.out.println("Control controller created");
         configureButtons();
         configureVolume();
     }
@@ -48,10 +36,10 @@ public class MainController {
     }
 
     private void configureButtons() {
-        previousButton.setOnAction(actionEvent -> System.out.println("Poprzednia piosenka"));
+        previousButton.setOnAction(event -> System.out.println("Poprzednia piosenka"));
         nextButton.setOnAction(x -> System.out.println("Następna piosenka"));
         playButton.setOnAction(event -> {
-            if (playButton.isSelected()) {
+            if(playButton.isSelected()) {
                 System.out.println("Play");
             } else {
                 System.out.println("Stop");
