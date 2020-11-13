@@ -20,5 +20,21 @@ public class MenuPaneController {
     public void initialize() {
         System.out.println("Menu controller created");
     }
+
+    public MenuItem getFileMenuItem() {
+        return fileMenuItem;
+    }
+
+    public MenuItem getDirMenuItem() {
+        return dirMenuItem;
+    }
+
+    public MenuItem getCloseMenuItem() {
+        return closeMenuItem;
+    }
+
+    public MenuItem getAboutMenuItem() {
+        return aboutMenuItem;
+    }
 }
 
