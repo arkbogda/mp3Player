@@ -1,16 +1,10 @@
 package org.example.mp3player.controller;
 
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.example.mp3player.mp3.Mp3Song;
-import org.farng.mp3.MP3File;
-import org.farng.mp3.TagException;
-
-import java.io.File;
-import java.io.IOException;
 
 public class ContentPaneController {
 
